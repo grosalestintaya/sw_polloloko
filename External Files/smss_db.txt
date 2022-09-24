@@ -1,0 +1,65 @@
+CREATE TABLE tbl_cliente
+(
+    ClienteID int AUTO_INCREMENT,
+    Username varchar(30),
+    Password varchar(30),
+    Rol varchar(30),
+    Nombrecliente varchar(40),
+    Appaterno varchar(40),
+    Ammaterno varchar(40),
+    Direccion varchar(50),
+    Email varchar(40),
+    PRIMARY key(ClienteID)
+)
+
+CREATE TABLE tbl_producto
+(
+    ProductoID int AUTO_INCREMENT,
+    NombreProducto varchar(40),
+    Tamanio varchar(30),
+    Ingredientes varchar(200),
+    Extras varchar(100),
+    Precio varchar(30),
+    Categoria varchar(30),
+    ProductoImagenNombre varchar(50),
+    ProductoImagen longblob,
+    PRIMARY KEY(ProductoID)
+)
+
+create table tbl_pedido
+(
+    PedidoID int AUTO_INCREMENT,
+    ProductoID int,
+    ClienteID int,
+    FechaPedido varchar(30),
+    PRIMARY key(PedidoID),
+    FOREIGN KEY(ProductoID) REFERENCES tbl_producto(ProductoID),
+    FOREIGN KEY(ClienteID) REFERENCES tbl_cliente(ClienteID )
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
