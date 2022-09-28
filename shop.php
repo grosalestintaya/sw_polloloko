@@ -34,8 +34,11 @@
 </head>
 
 <body class="">
-    <div class="brand">Delivery de Pizzas Margherita</div>
-    <div class="address-bar"><strong>Directo</strong> Y a la Puerta de tu Casa</div>
+    <div class="bg-warning ">
+        <div class="brand">Polleria Pollo Loko</div>
+        <div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
+
+    </div>
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -50,16 +53,16 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="bestseller.php">Pizzas más Populares</a></li>
-                    <li><a href="shop.php">Carta de Pizzas</a></li>
-                    <li><a href="about.php">Nosotros</a></li>
-                    <li><a href="#" onclick="ManagementOnclick();">Administrador</a></li>
+                    <li><a style="color: white;" href="index.php">Inicio</a></li>
+                    <li><a  style="color: white;"href="bestseller.php">Pedidos mas populares</a></li>
+                    <li><a style="color: white;" href="shop.php">Carta de Combos</a></li>
+                    <li><a style="color: white;" href="about.php">Nosotros</a></li>
+                    <li><a style="color: white;" href="#" onclick="ManagementOnclick();">Administrador</a></li>
                     <?php if ($Username == null) {
-                        echo '<li><a href="register.php?ActionType=Register">Registrarse para Pedidos</a></li>';
+                        echo '<li><a style="color: white;" href="register.php?ActionType=Register">Registrarse para Pedidos</a></li>';
                     } ?>
                     <?php if ($Username == null) {
-                        echo '<li><a href="Login.php?Rol=User">Ingresar</a></li>';
+                        echo '<li><a style="color: white;" href="Login.php?Rol=User">Ingresar</a></li>';
                     } else {
                         echo '<li><a href="Logout.php">Cerrar Sección</a></li>';
                     } ?>
@@ -70,7 +73,7 @@
 
     <div class="container">
         <?php
-        $conn = mysqli_connect("localhost", "root", "", "db_swdp");
+        $conn = mysqli_connect("examencloud.cbu56rel5olk.us-east-1.rds.amazonaws.com", "admin", "76668813g", "db_swdp");
         $sql = "SELECT * FROM `tbl_producto` order by Precio";
         $Resulta = mysqli_query($conn, $sql);
         ?>

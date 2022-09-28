@@ -21,6 +21,7 @@
 	<link rel="apple-touch-icon" href="https://irp.cdn-website.com/a47250df/dms3rep/multi/Logo+pollo+loko-930c84e4.png" />
 
 	<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/a47250df/site_favicon_16_1620353217497.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -40,8 +41,12 @@
 
 <body>
 
-	<div class="brand">Delivery de Pizzas Margherita</div>
-	<div class="address-bar"><strong>Directo</strong> y a la puerta de tu casa</div>
+
+	<div class="bg-warning ">
+		<div class="brand">Polleria Pollo Loko</div>
+		<div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
+
+	</div>
 
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
@@ -52,15 +57,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" style="padding: 0 15px;" href="index.html">Delivery de Pizzas Margherita</a>
+				<a class="navbar-brand" style="padding: 0 15px;" href="index.html">Polleria pollo Loko</a>
 			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="index.php">Inicio</a></li>
-					<li><a href="Management_Orders.php">Pedido</a></li>
-					<li><a href="Management_Products.php?ProductAction=Add">Registrar Pizzas</a></li>
-					<li><a href="Management_ProductsList.php">Lista de Pizzas</a></li>
-					<li><a href="Management_Customers.php">Clientes</a></li>
+			<div class="collapse navbar-collapse d-flex p-2 justify-content-center" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav ">
+					<li><a style="color: white;" href="index.php">Inicio</a></li>
+					<li><a style="color: white;" href="Management_Orders.php">Pedido</a></li>
+					<li><a style="color: white;" href="Management_Products.php?ProductAction=Add">Registrar Combo</a></li>
+					<li><a style="color: white;" href="Management_ProductsList.php">Lista de Combos</a></li>
+					<li><a style="color: white;" href="Management_Customers.php">Clientes</a></li>
 
 				</ul>
 			</div>
@@ -73,7 +78,7 @@
 			<div class="box">
 				<div class="col-lg-12">
 					<hr>
-					<h2 class="intro-text text-center">Pizzas</h2>
+					<h2 class="intro-text text-center">Cmbos - pollo</h2>
 					<hr>
 
 					<div class="col-md-12">
@@ -85,17 +90,17 @@
 							} ?>" method="POST" enctype="multipart/form-data">
 
 								<div class="form-group">
-									<label for="NombreProducto">Nombre de la Pizza:</label>
+									<label for="NombreProducto">Nombre del combo:</label>
 									<input type="text" name="NombreProducto" class="form-control" id="NombreProducto" placeholder="Ingresa el nombre de la Pizza" required>
 								</div>
 
 								<div class="form-group">
-									<label for="Tamanio">Tamaño de Pizza:</label>
+									<label for="Tamanio">Tamaño del combo:</label>
 									<input type="text" name="Tamanio" class="form-control" id="Tamanio" placeholder="Ingresa el Tipo de Pizza" required>
 								</div>
 
 								<div class="form-group">
-									<label for="Precio">Precio del Producto:</label>
+									<label for="Precio">Precio del Combo:</label>
 									<input type="text" name="Precio" class="form-control" id="Precio" placeholder="Ingrese el precio de la Pizza" required>
 								</div>
 						</div>

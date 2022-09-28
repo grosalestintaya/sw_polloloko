@@ -51,9 +51,11 @@
 
 <body>
 
-	<div class="brand">Delivery de Pizzas Margherita</div>
-	<div class="address-bar"><strong>Directo</strong> y a la Puerta de tu Casa</div>
+<div class="bg-warning ">
+        <div class="brand">Polleria Pollo Loko</div>
+        <div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
 
+    </div>
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
 			<div class="navbar-header">

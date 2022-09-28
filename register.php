@@ -45,9 +45,11 @@ if ($ActionType == "Edit") {
 </head>
 
 <body>
+<div class="bg-warning ">
+		<div class="brand">Polleria Pollo Loko</div>
+		<div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
 
-    <div class="brand">Delivery de Pizzas Margherita</div>
-    <div class="address-bar"><strong>Directo</strong> y a la puerta de tu casa</div>
+	</div>
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -58,21 +60,21 @@ if ($ActionType == "Edit") {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Delivery de Pizzas Margherita</a>
+                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Polleria Pollo Loko</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="bestseller.php">Más Vendidos</a></li>
-                    <li><a href="shop.php">Carta de Pizzas</a></li>
-                    <li><a href="about.php">Nosotros</a></li>
+                    <li><a style="color: white;" href="index.php">Inicio</a></li>
+                    <li><a  style="color: white;"href="bestseller.php">Más Vendidos</a></li>
+                    <li><a style="color: white;" href="shop.php">Carta de Combos</a></li>
+                    <li><a style="color: white;" href="about.php">Nosotros</a></li>
                     <?php if ($Username == null) {
-                        echo '<li><a href="register.php?ActionType=Register">Registro</a></li>';
+                        echo '<li><a style="color: white;" href="register.php?ActionType=Register">Registro</a></li>';
                     } ?>
                     <?php if ($Username == null) {
-                        echo '<li><a href="Login.php?Rol=User">Ingresar</a></li>';
+                        echo '<li><a style="color: white;" href="Login.php?Rol=User">Ingresar</a></li>';
                     } else {
-                        echo '<li><a href="Logout.php">Cerrar Sesión</a></li>';
+                        echo '<li><a style="color: white;" href="Logout.php">Cerrar Sesión</a></li>';
                     } ?>
                 </ul>
             </div>

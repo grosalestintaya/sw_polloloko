@@ -35,9 +35,12 @@
 </head>
 
 <body>
+    <div class="bg-warning " >
     <div class="brand">Polleria Pollo Loko</div>
-    <div class="address-bar"><strong>Un Sabor de Locura</strong>El loco sabor a granja ...</div>
-
+    <div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
+ 
+    </div>
+    
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -47,22 +50,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Delivery de Pizzas Margherita</a>
+                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">  Polleria Pollo Loko</a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="bestseller.php">Pedidos mas populares</a></li>
-                    <li><a href="shop.php">Carta </a></li>
-                    <li><a href="about.php">Nosotros</a></li>
-                    <li><a href="#" onclick="ManagementOnclick();">Administrador</a></li>
+            <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-defaut">
+                    <li><a style="color: white;"  href="index.php">Inicio</a></li>
+                    <li><a style="color: white;" href="bestseller.php">Pedidos mas populares</a></li>
+                    <li><a style="color: white;" href="shop.php">Carta </a></li>
+                    <li><a style="color: white;" href="about.php">Nosotros</a></li>
+                    <li><a style="color: white;" href="#" onclick="ManagementOnclick();">Administrador</a></li>
                     <?php if ($Username == null) {
-                        echo '<li><a href="register.php?ActionType=Register">Registrarse para Pedidos</a></li>';
+                        echo '<li><a style="color: white;" href="register.php?ActionType=Register">Registrarse para Pedidos</a></li>';
                     } ?>
                     <?php if ($Username == null) {
-                        echo '<li><a href="Login.php?Rol=User">Ingresar</a></li>';
+                        echo '<li><a style="color: white;" href="Login.php?Rol=User">Ingresar</a></li>';
                     } else {
-                        echo '<li><a href="Logout.php">Cerrar Sección</a></li>';
+                        echo '<li><a  style="color: white;" href="Logout.php">Cerrar Sección</a></li>';
                     } ?>
                 </ul>
             </div>

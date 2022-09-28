@@ -31,9 +31,12 @@
 
 <body>
 
-    <div class="brand">Polleria Pollo Loko</div>
-    <div class="address-bar"><strong>EL LOKO SABOR A GRANJA…
-        </strong> Un Sabor de Locura</div>
+    <div class="bg-warning ">
+        <div class="brand">Polleria Pollo Loko</div>
+        <div class="address-bar"><strong>Un Sabor de Locura -
+            </strong>El loco sabor a granja ...</div>
+
+    </div>
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -48,10 +51,10 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="bestseller.php">Pedidos mas populares</a></li>
-                    <li><a href="shop.php">Carta </a></li>
-                    <li><a href="about.php">Nosotros</a></li>
+                    <li><a style="color: white;" href="index.php">Inicio</a></li>
+                    <li><a style="color: white;" href="bestseller.php">Pedidos mas populares</a></li>
+                    <li><a style="color: white;" href="shop.php">Carta </a></li>
+                    <li><a style="color: white;" href="about.php">Nosotros</a></li>
                 </ul>
             </div>
         </div>

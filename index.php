@@ -11,6 +11,7 @@
 
     <title>Polleria Pollo Loko </title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/business-casual.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -35,9 +36,9 @@
 </head>
 
 
-<body>
+<body >
 
-    <nav class="navbar navbar-default" role="navigation">
+    <nav style="background-color:#fa8e00;" class="navbar navbar-default " role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Polleria Pollo lokoL</a>
+                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Polleria Pollo loko</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -70,8 +71,8 @@
 
     <div class="banner">
         <div class="banner-body">
-            <h3 class="text-uppercase">Bienvenido a Polleria Pollo Loko</h3>
-            <a href="shop.php" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ver Carta de Pizzas</a>
+            <h3  style="font-size:35px; color:orange;" class="text-uppercase solid ">Bienvenido a Polleria Pollo Loko</h3>
+            <a style="font-size:20px;" href="shop.php" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ver Carta y Combos</a>
         </div>
     </div>
 
@@ -87,22 +88,20 @@
                             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         </ol>
 
-                        <div class="carousel-inner">
+                        <div class="carousel-inner bg-danger">
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/pollo-1.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/pollo-2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/pollo-3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/polloloko.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/pollo-4.jpg" alt="">
                             </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/polloloko.jpg" alt="">
-                            </div>
+                            
                         </div>
                         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                             <span class="icon-prev"></span>
@@ -126,7 +125,7 @@
         <?php while ($Rows = mysqli_fetch_array($Resulta)) {
             echo '	
 		<div class="col-sm-4 col-lg-4 col-md-4">
-             <div class="thumbnail">
+             <div style="background-color:#fa8e00;" class="thumbnail">
 				<h4 style="text-align: center;">' . $Rows[2] . '</h4>
                 <img style="border: 2px solid gray; border-radius: 10px; height: 229px; width: 298px;" src="data:image;base64,' . $Rows[8] . '" alt="">
                 <div class="caption">

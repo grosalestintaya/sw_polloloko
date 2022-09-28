@@ -21,6 +21,7 @@
 	<link rel="apple-touch-icon" href="https://irp.cdn-website.com/a47250df/dms3rep/multi/Logo+pollo+loko-930c84e4.png" />
 
 	<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/a47250df/site_favicon_16_1620353217497.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -39,8 +40,11 @@
 
 <body>
 
-	<div class="brand">Delivery de Pizzas Margherita</div>
-	<div class="address-bar"><strong>Directo</strong> y a la Puerta de tu Casa</div>
+<div class="bg-warning ">
+		<div class="brand">Polleria Pollo Loko</div>
+		<div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
+
+	</div>
 
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
@@ -51,15 +55,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" style="padding: 0 15px;" href="index.html">Delivery de Pizzas Margherita</a>
+				<a class="navbar-brand" style="padding: 0 15px;" href="index.html">Polleria Pollo Loko</a>
 			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="index.php">Inicio</a></li>
-					<li><a href="Management_Orders.php">Pedido</a></li>
-					<li><a href="Management_Products.php?ProductAction=Add">Registar Pizzas</a></li>
-					<li><a href="Management_ProductsList.php">Lista de Pizzas</a></li>
-					<li><a href="Management_Customers.php">Clientes</a></li>
+			<div class="collapse navbar-collapse d-flex p-2 justify-content-center" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav ">
+					<li><a style="color: white;" href="index.php">Inicio</a></li>
+					<li><a style="color: white;" href="Management_Orders.php">Pedido</a></li>
+					<li><a style="color: white;" href="Management_Products.php?ProductAction=Add">Registrar Combo</a></li>
+					<li><a style="color: white;" href="Management_ProductsList.php">Lista de Combos</a></li>
+					<li><a style="color: white;" href="Management_Customers.php">Clientes</a></li>
+
 				</ul>
 			</div>
 		</div>
@@ -70,7 +75,7 @@
 			<div class="box">
 				<div class="col-lg-12">
 					<hr>
-					<h2 class="intro-text text-center">Lista de Pizzas</h2>
+					<h2 class="intro-text text-center">Lista de Combos - polleria</h2>
 					<hr>
 					<div class="col-lg-12">
 						<div class="table-responsive">
@@ -84,7 +89,8 @@
 									<td>Ingredientes</td>
 									<td>Extras</td>
 									<td>Precio</td>
-									<td>Acción</td>
+									<td>Acciónes del registrador de productos</td>
+									
 								</tr>
 
 								<?php
@@ -93,19 +99,19 @@
 								$Resulta = mysqli_query($Conn, $sql);
 								while ($Rows = mysqli_fetch_array($Resulta)) :;
 								?>
-									<tr style="color: black">
+									<tr style="color: black ">
 										<td><?php echo $Rows[0]; ?></td>
 										<td><?php echo $Rows[1]; ?></td>
-										<td><img style="width: 50px; height: 50px;" src="data:image;base64,<?php echo $Rows[2]; ?>"></td>
+										<td><img style="width: 60px; height: 60px;" src="data:image;base64,<?php echo $Rows[2]; ?>"></td>
 										<td><?php $cid = $Rows[3];
 											echo $cid; ?></td>
 										<td><?php echo $Rows[4]; ?></td>
 										<td><?php echo $Rows[5]; ?></td>
 										<td><?php echo $Rows[6]; ?></td>
 										<td><?php echo $Rows[7]; ?></td>
-										<td>
-											<a href="#" onclick="ProductOnlick('Edit',<?php echo $Rows[0]; ?>)">Editar</a> |
-											<a href="#" onclick="ProductOnlick('Delete',<?php echo $Rows[0]; ?>)">Eliminar</a>
+										<td  class=" row d-flex p-7">
+											<a class="btn btn-primary" href="#" onclick="ProductOnlick('Edit',<?php echo $Rows[0]; ?>)">Editar</a> |
+											<a  class="btn btn-danger"  href="#" onclick="ProductOnlick('Delete',<?php echo $Rows[0]; ?>)">Eliminar</a>
 										</td>
 									<?php endwhile; ?>
 									</tr>

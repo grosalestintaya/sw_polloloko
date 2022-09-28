@@ -15,12 +15,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/business-casual.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <!--Add favorites icons-->
 
     <link rel="apple-touch-icon" href="https://irp.cdn-website.com/a47250df/dms3rep/multi/Logo+pollo+loko-930c84e4.png" />
 
     <link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/a47250df/site_favicon_16_1620353217497.ico" />
+
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,9 +39,11 @@
 
 <body>
 
-    <div class="brand">Delivery de Pizzas Margherita</div>
-    <div class="address-bar"><strong>Directo</strong> y a la puerta de tu casa</div>
+    <div class="bg-warning ">
+        <div class="brand">Polleria Pollo Loko</div>
+        <div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
 
+    </div>
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -50,15 +55,16 @@
                 </button>
                 <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Delivery de Pizzas Margherita</a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="Management_Orders.php">Pedidos</a></li>
-                    <li><a href="Management_Products.php?ProductAction=Add">Registrar Pizzas</a></li>
-                    <li><a href="Management_ProductsList.php">Lista de Pizzas</a></li>
-                    <li><a href="Management_Customers.php">Clientes</a></li>
-                </ul>
-            </div>
+            <div class="collapse navbar-collapse d-flex p-2 justify-content-center" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav ">
+					<li><a style="color: white;" href="index.php">Inicio</a></li>
+					<li><a style="color: white;" href="Management_Orders.php">Pedido</a></li>
+					<li><a style="color: white;" href="Management_Products.php?ProductAction=Add">Registrar Combo</a></li>
+					<li><a style="color: white;" href="Management_ProductsList.php">Lista de Combos</a></li>
+					<li><a style="color: white;" href="Management_Customers.php">Clientes</a></li>
+
+				</ul>
+			</div>
         </div>
     </nav>
 
@@ -98,7 +104,7 @@
                                     <td><?php echo $Rows[5]; ?></td>
                                     <td><?php echo $Rows[6]; ?></td>
                                     <td>
-                                        <a href="#" onclick="CancelOrderOnclick(<?php echo $Rows[0]; ?>);">Eliminar pedido</a>
+                                        <a class="btn btn-danger" style="color: black;" href="#" onclick="CancelOrderOnclick(<?php echo $Rows[0]; ?>);">Eliminar pedido</a>
                                     </td>
                                 <?php endwhile; ?>
                                 </tr>
