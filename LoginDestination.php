@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$conn = mysqli_connect("localhost","root","","db_swdp");
+	$conn = mysqli_connect("examencloud.cbu56rel5olk.us-east-1.rds.amazonaws.com","admin","76668813g","db_swdp");
 		if(!$conn)
 			{
 				die("Connection Failed" . mysqli_connect_error());
