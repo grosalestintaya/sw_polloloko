@@ -146,7 +146,7 @@ if ($ActionType == "Edit") {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Delivery de Pizzas Margherita</p>
+                    <p>Copyright &copy; Polleria Pollo Loko</p>
                 </div>
             </div>
         </div>

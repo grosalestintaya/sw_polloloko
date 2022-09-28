@@ -53,7 +53,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Delivery de Pizzas Margherita</a>
+                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Polleria Pollo Loko</a>
             </div>
             <div class="collapse navbar-collapse d-flex p-2 justify-content-center" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav ">
@@ -82,8 +82,8 @@
                                 <td>N° de Pedido</td>
                                 <td>Cliente</td>
                                 <td>Dirección del Cliente</td>
-                                <td>Nombre de Pizza</td>
-                                <td>Tamaño de Pizza</td>
+                                <td>Nombre del bombo</td>
+                                <td>Tamaño de combo</td>
                                 <td>Precio</td>
                                 <td>Fecha de Pedido</td>
                                 <td>Acción</td>
@@ -122,7 +122,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Delivery de Pizzas Margherita</p>
+                    <p>Copyright &copy; Polleria Pollo Loko 2022</p>
                 </div>
             </div>
         </div>

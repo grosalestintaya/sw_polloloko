@@ -133,7 +133,7 @@
                             } ?> |
                             <a href="#">Volver arriba</a>
                         </strong><br>
-                        Copyright &copy; Delivery de Pizzas Margherita
+                        Copyright &copy; Polleria  Pollo Loko 2022
                     </p>
                 </div>
             </div>

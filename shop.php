@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Delivery de Pizzas Margherita</title>
+    <title>Polleria Pollo Loko</title>
     <!--Add favorites icons-->
 
     <link rel="apple-touch-icon" href="https://irp.cdn-website.com/a47250df/dms3rep/multi/Logo+pollo+loko-930c84e4.png" />
@@ -117,7 +117,7 @@
                             } ?> |
                             <a href="#">Volver arriba</a>
                         </strong><br>
-                        Copyright &copy; Delivery de Pizzas Margherita
+                        Copyright &copy;Polleria  Pollo Loko 2022
                     </p>
 
                 </div>
