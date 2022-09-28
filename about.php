@@ -94,7 +94,7 @@
                     <hr>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                    <img class="img-responsive img-border-left" src="img/pollo-1.jpg" alt="">
                 </div>
                 <div class="col-md-6">
                     <p><b>Polleria Pollo Loko</b> Somos una empresa que se dedica a la venta de pollo a la brasa y elabora los mejores platos para compartir en familia. Nuestra experiencia nos avala por ofrecer productos de primera calidad y llevar los sabores de la granja a tu mesa.</p>
@@ -106,7 +106,7 @@
                     <b>
                         <h4>Ubicación</h4>
                     </b>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.481957032348!2d-72.88222836799598!3d-13.63688582437816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d02decc4e058d%3A0xdf1b91644e72bc66!2sJr.%20Lima%2C%20Abancay%2003001!5e0!3m2!1ses!2spe!4v1632962607572!5m2!1ses!2spe" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.3863494379675!2d-72.88668778463006!3d-13.63424677716847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d032f81c10ea5%3A0xdd91c6dbbfe9c2b7!2sPOLLO%20LOKO!5e0!3m2!1ses-419!2spe!4v1620181790245!5m2!1ses-419!2spe" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="clearfix"></div>
             </div>
