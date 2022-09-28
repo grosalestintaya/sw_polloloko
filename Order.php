@@ -99,7 +99,7 @@
 
                             </div>
                             <div class="card-body">
-                                <h>realizar el al yape mostrado - plazo maximo 10 minutos - caso contrario su pedido sera descartado</h1>
+                                <h>realizar el pago al yape mostrado - plazo maximo 10 minutos - caso contrario su pedido sera descartado</h1>
                             </div>
 
                         </div>
