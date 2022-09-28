@@ -69,7 +69,7 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.php">Inicio</a></li>
+                    <li><a style="color: white;" href="index.php">Inicio</a></li>
                     <li><a style="color: white;" href="bestseller.php">Pedidos mas populares</a></li>
                     <li><a style="color: white;" href="shop.php">Nuestra carta salon</a></li>
                     <li><a style="color: white;" href="about.php">Nosotros</a></li>
