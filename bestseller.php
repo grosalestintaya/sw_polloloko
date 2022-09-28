@@ -89,8 +89,8 @@
 									<hr>
 									<img class="img-responsive img-border img-left" src="data:image;base64,' . $Rows[8] . '" alt="">
 									<hr class="visible-xs">
-									<p><strong>Nombre del la Pizza:</strong> ' . $Rows[1] . '</p>
-									<p><strong>Tipo de Pizza:</strong> ' . $Rows[2] . '</p>
+									<p><strong>Nombre del Combo:</strong> ' . $Rows[1] . '</p>
+									<p><strong>Tipo de Combo:</strong> ' . $Rows[2] . '</p>
 									<p><strong>Ingredientes:</strong> ' . $Rows[3] . '</p>
 									<p><strong>Extras:</strong> ' . $Rows[4] . '</p>
 									<p><strong>Precio: s/.</strong> ' . $Rows[5] . '</p>

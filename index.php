@@ -129,7 +129,7 @@
 				<h4 style="text-align: center;">' . $Rows[2] . '</h4>
                 <img style="border: 2px solid gray; border-radius: 10px; height: 229px; width: 298px;" src="data:image;base64,' . $Rows[8] . '" alt="">
                 <div class="caption">
-					<p><strong>Nombre de la Pizza:</strong> ' . $Rows[1] . '</p>
+					<p><strong>Nombre del  Combo:</strong> ' . $Rows[1] . '</p>
 					<p><strong>Ingredientes:</strong> ' . $Rows[3] . '</p>
 					<p><strong>Extras:</strong> ' . $Rows[4] . '</p>
 					<p><strong>s/. ' . $Rows[5] . '.00</strong></p>
