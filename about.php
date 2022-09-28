@@ -21,6 +21,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,20 +29,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<?php
-		$Username = null;
-		if(!empty($_SESSION["Username"]))
-		{
-			$Username = $_SESSION["Username"];
-		}
-	?>
+    <?php
+    $Username = null;
+    if (!empty($_SESSION["Username"])) {
+        $Username = $_SESSION["Username"];
+    }
+    ?>
 </head>
 
-<body>
+<body class="bg-danger">
 
-    <div class="brand">Polleria Pollo Loko Abancay</div>
-    <div class="address-bar"><strong>Un Sabor de Locura</strong> El loco sabor a granja ...</div>
+    <div class="bg-warning ">
+        <div class="brand">Polleria Pollo Loko</div>
+        <div class="address-bar"><strong>Un Sabor de Locura - </strong>El loco sabor a granja ...</div>
 
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -54,18 +56,25 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Delivery de Pizzas Margherita</a>
+                <a class="navbar-brand" style="padding: 0 15px;" href="index.html">Polleria Polo Loko</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                <li><a href="index.php">Inicio</a></li>
-					<li><a href="bestseller.php">Pedidos mas populares</a></li>
-					<li><a href="shop.php">Nuestra carta salon</a></li>
-                    <li><a href="about.php">Nosotros</a></li>
-					<li><a href="#" onclick="ManagementOnclick();">Menu de Administrador</a></li>
-					<?php if($Username == null){echo '<li><a href="register.php?ActionType=Register">Registrarse para pedidos</a></li>';} ?>
-					<?php if($Username == null){echo '<li><a href="Login.php?Rol=User">Ingresar</a></li>';} else {echo '<li><a href="Logout.php">Cerrar Sesión</a></li>';} ?>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a style="color: white;" href="bestseller.php">Pedidos mas populares</a></li>
+                    <li><a style="color: white;" href="shop.php">Nuestra carta salon</a></li>
+                    <li><a style="color: white;" href="about.php">Nosotros</a></li>
+                    <li><a style="color: white;" href="#" onclick="ManagementOnclick();">Menu de Administrador</a></li>
+                    <?php if ($Username == null) {
+                        echo '<li><a style="color: white;" href="register.php?ActionType=Register">Registrarse para pedidos</a></li>';
+                    } ?>
+                    <?php if ($Username == null) {
+                        echo '<li><a style="color: white;" href="Login.php?Rol=User">Ingresar</a></li>';
+                    } else {
+                        echo '<li><a style="color: white;"  href="Logout.php">Cerrar Sesión</a></li>';
+                    } ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -94,7 +103,9 @@
                 </div>
 
                 <div class="map" style="text-align: center;">
-                    <b><h4>Ubicación</h4></b>
+                    <b>
+                        <h4>Ubicación</h4>
+                    </b>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.481957032348!2d-72.88222836799598!3d-13.63688582437816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d02decc4e058d%3A0xdf1b91644e72bc66!2sJr.%20Lima%2C%20Abancay%2003001!5e0!3m2!1ses!2spe!4v1632962607572!5m2!1ses!2spe" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="clearfix"></div>
@@ -108,16 +119,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                   <p>
-					<?php echo '<strong>'.$Username.'</strong>'; ?>
-					<br>
-					<strong>
-					<?php if($Username != null){echo '<a href="ManageAccount.php?RoRolle=User">Manage Account</a> |';} ?> 
-					<?php if($Username == null){echo '<a href="Login.php?Rol=User">Login</a>';} else {echo '<a href="Logout.php">Cerrar Sección</a>';} ?> | 
-					<a href="#">Volver arriba</a>
-					</strong><br>
-					Copyright &copy; Delivery de Pizzas Margherita
-					</p>
+                    <p>
+                        <?php echo '<strong>' . $Username . '</strong>'; ?>
+                        <br>
+                        <strong>
+                            <?php if ($Username != null) {
+                                echo '<a href="ManageAccount.php?RoRolle=User">Manage Account</a> |';
+                            } ?>
+                            <?php if ($Username == null) {
+                                echo '<a href="Login.php?Rol=User">Login</a>';
+                            } else {
+                                echo '<a href="Logout.php">Cerrar Sección</a>';
+                            } ?> |
+                            <a href="#">Volver arriba</a>
+                        </strong><br>
+                        Copyright &copy; Delivery de Pizzas Margherita
+                    </p>
                 </div>
             </div>
         </div>
@@ -128,15 +145,12 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-	<script>
-		
-		function ManagementOnclick(){
-			if(confirm("Solo los administradores tienen permitido acceder a esta página. Inicie sesión como administrador.") == true)
-			{
-				window.open("Login.php?Rol=Admin","_self",null,true);
-			}
-		}
-		
+    <script>
+        function ManagementOnclick() {
+            if (confirm("Solo los administradores tienen permitido acceder a esta página. Inicie sesión como administrador.") == true) {
+                window.open("Login.php?Rol=Admin", "_self", null, true);
+            }
+        }
     </script>
 
 </body>
