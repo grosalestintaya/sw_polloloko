@@ -34,7 +34,7 @@
     <div class="bg-warning ">
         <div class="brand">Polleria Pollo Loko</div>
         <div class="address-bar"><strong>Un Sabor de Locura -
-            </strong>El loco sabor a granja ...</div>
+            </strong>El loco sabor a granja ..</div>
 
     </div>
 
