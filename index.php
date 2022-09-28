@@ -105,7 +105,7 @@
         </div>
 
         <?php
-        $conn = mysqli_connect("localhost", "root", "", "db_swdp");
+        $conn = mysqli_connect("examencloud.cbu56rel5olk.us-east-1.rds.amazonaws.com", "admin", "76668813g", "db_swdp");
         $sql = "SELECT * FROM `tbl_producto` Limit 10";
         $Resulta = mysqli_query($conn, $sql);
         ?>
