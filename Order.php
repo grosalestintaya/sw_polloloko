@@ -10,17 +10,19 @@
     <meta name="author" content="">
 
     <title>Pedido</title>
+    <!--Add favorites icons-->
+
+    <link rel="apple-touch-icon" href="https://irp.cdn-website.com/a47250df/dms3rep/multi/Logo+pollo+loko-930c84e4.png" />
+    <link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/a47250df/site_favicon_16_1620353217497.ico" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/business-casual.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" 
-	rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" 
-	rel="stylesheet" type="text/css">
-	<style>
-		#pdetails span{
-			float: right;
-		}
-	</style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <style>
+        #pdetails span {
+            float: right;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,28 +44,30 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Inicio</a></li>
-					<li><a href="bestseller.php">Pizzas mas Populares</a></li>
-					<li><a href="shop.php">Carta de Pizzas</a></li>
+                    <li><a href="bestseller.php">Pizzas mas Populares</a></li>
+                    <li><a href="shop.php">Carta de Pizzas</a></li>
                     <li><a href="about.php">Nosotros</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-	
-	<?php
-		require 'Connection.php';
-		$UN = $_SESSION['Username'];
-		$PASS = $_SESSION['Password'];
-		$ProductoID = $_GET['ProductoID'];
 
-		if(empty($UN)){echo '<script>window.open("Login.php?Rol=User","_self",null,true);</script>';}
-		
-		$sql = "SELECT * FROM `tbl_cliente` WHERE `Username` = '".$UN."' and `Password` = '".$PASS."' and `Rol` = 'User'";
-		$res = mysqli_query($Conn,$sql);
-		while($Rows = mysqli_fetch_array($res)){
-			$ClienteID = $Rows[0];
-		}
-	?>
+    <?php
+    require 'Connection.php';
+    $UN = $_SESSION['Username'];
+    $PASS = $_SESSION['Password'];
+    $ProductoID = $_GET['ProductoID'];
+
+    if (empty($UN)) {
+        echo '<script>window.open("Login.php?Rol=User","_self",null,true);</script>';
+    }
+
+    $sql = "SELECT * FROM `tbl_cliente` WHERE `Username` = '" . $UN . "' and `Password` = '" . $PASS . "' and `Rol` = 'User'";
+    $res = mysqli_query($Conn, $sql);
+    while ($Rows = mysqli_fetch_array($res)) {
+        $ClienteID = $Rows[0];
+    }
+    ?>
 
     <div class="container">
 
@@ -76,19 +80,19 @@
                 </div>
 
                 <div class="col-md-6">
-                 <form role="form" action="OrderAction.php?ProductoID=<?php echo $ProductoID; ?>&ClienteID=<?php echo $ClienteID; ?>" method="POST">
-					<div class="form-group">
-					  <label for="ProductoID">ID de la Pizza:</label>
-					  <input type="text" name="ProductoID" class="form-control" id="ProductoID" value="<?php echo $ProductoID; ?>" disabled>
-					</div>
-					<div class="form-group">
-					  <label for="ClienteID">ID Cliente:</label>
-					  <input type="text" name="ClienteID" class="form-control" id="ClienteID" value="<?php echo $ClienteID; ?>" disabled>
-					</div>
-						<button type="submit" style="float: right;" class="btn btn-default">Confirmar Pedido</button>
-					</form>
-				</div>
-                
+                    <form role="form" action="OrderAction.php?ProductoID=<?php echo $ProductoID; ?>&ClienteID=<?php echo $ClienteID; ?>" method="POST">
+                        <div class="form-group">
+                            <label for="ProductoID">ID de la Pizza:</label>
+                            <input type="text" name="ProductoID" class="form-control" id="ProductoID" value="<?php echo $ProductoID; ?>" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="ClienteID">ID Cliente:</label>
+                            <input type="text" name="ClienteID" class="form-control" id="ClienteID" value="<?php echo $ClienteID; ?>" disabled>
+                        </div>
+                        <button type="submit" style="float: right;" class="btn btn-default">Confirmar Pedido</button>
+                    </form>
+                </div>
+
                 <div class="clearfix"></div>
             </div>
         </div>
