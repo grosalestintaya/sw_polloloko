@@ -39,8 +39,8 @@
 
 <body>
 
-    <div class="brand">Delivery de Pizzas Margherita</div>
-    <div class="address-bar"><strong>Directo</strong> Y a la puerta de tu casa</div>
+    <div class="brand">Polleria Pollo Loko Abancay</div>
+    <div class="address-bar"><strong>Un Sabor de Locura</strong> El loco sabor a granja ...</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -60,8 +60,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                 <li><a href="index.php">Inicio</a></li>
-					<li><a href="bestseller.php">Pizzas más populares</a></li>
-					<li><a href="shop.php">Carta de Pizzas</a></li>
+					<li><a href="bestseller.php">Pedidos mas populares</a></li>
+					<li><a href="shop.php">Nuestra carta salon</a></li>
                     <li><a href="about.php">Nosotros</a></li>
 					<li><a href="#" onclick="ManagementOnclick();">Menu de Administrador</a></li>
 					<?php if($Username == null){echo '<li><a href="register.php?ActionType=Register">Registrarse para pedidos</a></li>';} ?>
@@ -80,7 +80,7 @@
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">
-                        <strong>Delivery de Pizzas Margherita</strong>
+                        <strong>Polleria Pollo Loko</strong>
                     </h2>
                     <hr>
                 </div>
@@ -88,9 +88,9 @@
                     <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <p><b>Delivery de Pizzas Margherita</b> es una empresa en la ciudad de Abancay que brinda a sus clientes una amplia variedad de pizzas de fabricación propia, de varios tamaños. Los clientes tienen a disposición un menú que describe para cada una de las variedades, el nombre, los ingredientes y el precio según el tamaño y el tipo de la pizza. Los clientes realizan sus pedidos ingresando al sistema web para poder realizar su pedido.</p>
+                    <p><b>Polleria Pollo Loko</b> Somos una empresa que se dedica a la venta de pollo a la brasa y elabora los mejores platos para compartir en familia. Nuestra experiencia nos avala por ofrecer productos de primera calidad y llevar los sabores de la granja a tu mesa.</p>
 
-                    <p>También cuenta con el servicio de delivery, cuando se toma dicho pedido (ingresando al Sistema web) deberán solicitarse datos extras como dirección y correo . Con los datos solicitados, el pedido será entregado al personal de entrega para poder efectuar la entrega requerida por el cliente.</p><br>
+                    <p> Además, contamos con todos los protocolos de bioseguridad para llevarles tranquilidad y confianza a nuestros clientes.</p><br>
                 </div>
 
                 <div class="map" style="text-align: center;">
